@@ -6,7 +6,7 @@ import {
   STORE_LOGIN_INFO,
   STORE_TOKEN,
   LOGIN_INFO,
-  MOTOR_APP_ID,
+  APP_ID,
 } from "@common/config/constant";
 // import { Checkbox } from "@antmjs/vantui";
 import { domain } from "@common/config/domain";
@@ -24,7 +24,7 @@ export default function LoginPage() {
           if (res.code) {
             // 发起网络请求
             const { uuid } = await miniProgram({
-              appId: MOTOR_APP_ID,
+              appId: APP_ID,
               code: res.code,
             });
             if (uuid) {

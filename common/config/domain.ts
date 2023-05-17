@@ -3,17 +3,17 @@ export const env = process.env.NODE_ENV || "production";
 const domainObj = {
   // 开发环境
   development: {
-    BASE_URL: "https://test-wechat.qjmotorlink.com",
-    BASE_H5: "https://test-h5.qjmotorlink.com",
-    IMG_URL: "https://test-wechat.qjmotorlink.com",
-    IMG_H5: "https://test-h5.qjmotorlink.com",
+    BASE_URL: "", // 基本请求URL
+    BASE_H5: "", // 请求H5，URL
+    IMG_URL: "", // 基本图片请求URL
+    IMG_H5: "", // 请求H5图片URL
   },
   // 生产环境
   production: {
-    BASE_URL: "https://wechat.qjmotorlink.com",
-    BASE_H5: "https://h5.qjmotorlink.com",
-    IMG_URL: "https://wechat.qjmotorlink.com",
-    IMG_H5: "https://h5.qjmotorlink.com",
+    BASE_URL: "",
+    BASE_H5: "",
+    IMG_URL: "",
+    IMG_H5: "",
   },
 };
 export const domain = domainObj[env];
